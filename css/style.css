@@ -9,7 +9,7 @@
 
 /* body */
 .bg-custom {
-    background-color: #006a4e;
+    background-color: #100F0F;
 }
 
 
@@ -24,7 +24,7 @@ header {
 
 .title {
     font-family: 'Berkshire Swash', cursive;
-    color: #f42a41;
+    color: #EF5B0C;
     font-size: 76px;
 }
 
@@ -59,6 +59,20 @@ header {
 }
 
 .btn-select:hover {
-    background-color: #015196;
+    background-color: #EF5B0C;
     color: white;
 }
+
+.player-name {
+    color: #EF5B0C;
+}
+
+.border-orange {
+    border: 2px solid #EF5B0C;
+}
+
+.text-orange {
+    color: #EF5B0C;
+}
+
+.selected-title {}
