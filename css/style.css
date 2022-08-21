@@ -103,6 +103,15 @@ header {
     color: white;
 }
 
+.btn-calculate:focus {
+    background-color: #d85108;
+    color: white;
+}
+
+.btn-select:focus {
+    background-color: #A2A9AF;
+    color: black;
+}
 
 td {
     vertical-align: middle;
