@@ -19,16 +19,27 @@ for (let i = 0; i < btnSelect.length; i++) {
 const calculateBtn = getViewById('calculate')
 // console.log(calculateBtn)
 calculateBtn.addEventListener('click', function () {
-    const numberOfPlayers = getViewById('selected-five').childNodes.length - 1;
-    const playerCost = getValueByID('player-cost')
-    const managerCost = getValueByID('manager-cost')
-    const coachCost = getValueByID('coach-cost')
-    const totalPlayerCost = playerCost * numberOfPlayers;
+    if (calculateValidate('player-cost')) {
+        const numberOfPlayers = getViewById('selected-five').childNodes.length - 1;
+        const playerCost = getValueByID('player-cost')
+        const totalPlayerCost = playerCost * numberOfPlayers;
 
-    const valueField = getViewById('total-player-cost');
-    valueField.innerText = totalPlayerCost;
+        setValueByID('total-player-cost', totalPlayerCost)
+    }
+})
 
 
-    console.log(playerCost)
-    console.log(numberOfPlayers)
+
+const calculateTotalBtn = getViewById('calculate-total')
+calculateTotalBtn.addEventListener('click', function () {
+    if (calculateValidate('manager-cost') && calculateValidate('coach-cost')) {
+        const playerCost = parseFloat(getViewById('total-player-cost').innerText);
+        const managerCost = getValueByID('manager-cost')
+        const coachCost = getValueByID('coach-cost')
+
+        const totalCost = playerCost + managerCost + coachCost;
+
+        setValueByID('total-cost', totalCost)
+    }
+
 })
