@@ -12,10 +12,15 @@
     background-color: #100F0F;
 }
 
+body,
+html {
+    overflow-x: hidden;
+}
+
 
 /* header */
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/ground.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), #100F0F), url("../img/ground.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -68,7 +73,7 @@ header {
 }
 
 .border-orange {
-    border: 2px solid #EF5B0C;
+    border: 1px solid #EF5B0C;
 }
 
 .text-orange {
@@ -115,6 +120,12 @@ header {
 
 td {
     vertical-align: middle;
+}
+
+
+/* footer */
+footer {
+    border-top: 1px solid #EF5B0C;
 }
 
 @media screen and (max-width: 992px) {

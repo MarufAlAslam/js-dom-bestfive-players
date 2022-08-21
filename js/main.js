@@ -26,6 +26,10 @@ calculateBtn.addEventListener('click', function () {
 
         setValueByID('total-player-cost', totalPlayerCost)
     }
+    else {
+        alert("Please enter a valid player cost")
+        setValueByID('total-player-cost', "error")
+    }
 })
 
 
@@ -40,6 +44,10 @@ calculateTotalBtn.addEventListener('click', function () {
         const totalCost = playerCost + managerCost + coachCost;
 
         setValueByID('total-cost', totalCost)
+    }
+    else {
+        alert("Please enter a valid player cost")
+        setValueByID('total-cost', "error")
     }
 
 })

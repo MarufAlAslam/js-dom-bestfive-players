@@ -37,17 +37,18 @@ function setValueByID(id, value) {
     element.innerText = value;
 }
 
+
 function validator(value) {
     if (value === 0) {
-        alert("Please enter a valid player cost")
+        // alert("Please enter a valid player cost")
         return false;
     }
     else if (value < 0) {
-        alert("Please enter a positive cost")
+        // alert("Please enter a positive cost")
         return false;
     }
     else if (value % 1 !== 0) {
-        alert("Please enter a number")
+        // alert("Please enter a number")
         return false;
     }
     else {
@@ -58,4 +59,8 @@ function validator(value) {
 function calculateValidate(id) {
     const playerCost = getValueByID(id);
     return validator(playerCost);
+}
+
+function makeNull(id) {
+    setValueByID(id, "0");
 }
