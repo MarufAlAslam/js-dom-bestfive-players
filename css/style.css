@@ -1,0 +1,35 @@
+* {
+    font-family: 'Manrope', sans-serif;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+
+/* header */
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/ground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    padding: 135px 0;
+}
+
+.title {
+    font-family: 'Berkshire Swash', cursive;
+    color: #FF5E19;
+    font-size: 76px;
+}
+
+.title::after {
+    content: '';
+    background: url("../img/line1.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 330px;
+    height: 40px;
+    right: 0;
+    bottom: -45px;
+    text-align: right !important;
+}
