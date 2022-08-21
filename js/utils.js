@@ -60,7 +60,3 @@ function calculateValidate(id) {
     const playerCost = getValueByID(id);
     return validator(playerCost);
 }
-
-function makeNull(id) {
-    setValueByID(id, "0");
-}

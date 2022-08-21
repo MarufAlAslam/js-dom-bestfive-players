@@ -4,6 +4,7 @@ for (let i = 0; i < btnSelect.length; i++) {
     btnSelect[i].addEventListener('click', function () {
         count++;
         if (count <= 5) {
+            this.innerText = 'Selected';
             document.getElementById('notification').style.display = "none";
             const playerName = this.parentNode.childNodes[1].innerText
             listAppend(playerName);
