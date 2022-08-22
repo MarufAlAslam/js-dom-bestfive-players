@@ -28,7 +28,7 @@ calculateBtn.addEventListener('click', function () {
         setValueByID('total-player-cost', totalPlayerCost)
     }
     else {
-        alert("Please enter a valid player cost")
+        alert("Please enter a valid cost")
         setValueByID('total-player-cost', "error")
     }
 })
@@ -47,7 +47,7 @@ calculateTotalBtn.addEventListener('click', function () {
         setValueByID('total-cost', totalCost)
     }
     else {
-        alert("Please enter a valid player cost")
+        alert("Please enter a valid cost")
         setValueByID('total-cost', "error")
     }
 
